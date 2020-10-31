@@ -1,0 +1,64 @@
+﻿@page
+@model B_MHAC_Site.Pages.ContactModel
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<head>
+    <link rel="canonical" href="http://www.b-mhac.com/contact-us" />
+    <meta name="description" content="Reach out and let's get started on your vision today!" />
+    <meta name="keywords" content="B-MHAC, Contact, New York, New Jersey" />
+</head>
+<div class="contact-main-block">
+    <div class="contact-sub-block-1">
+        <div class="contact-header-block-1">
+            <div class="contact-header-block-1-before">
+                <h1 class="contact-header-text-1">You Can Do It</h1>
+                <div class="contact-undercircle-1"></div>
+            </div>
+            <div class="contact-circle-1"><span class="contact-circle-1-after"></span></div>
+            <div class="contact-ver-bar-1"></div>
+            <div class="contact-hor-bar-1"></div>
+        </div>
+        <div class="contact-header-block-2">
+            <div class="contact-header-block-2-before">
+                <h1 class="contact-header-text-2">And We Can Help</h1>
+                <div class="contact-undercircle-2"></div>
+            </div>
+            <div class="contact-circle-2"><span class="contact-circle-2-after"></span></div>
+            <div class="contact-hor-bar-2"></div>
+        </div>
+        <div class="contact-header-block-3">
+            <div class="contact-header-block-3-before">
+                <h1 class="contact-header-text-3-1">You Can Do It, And We Can Help. Reach out, Say Hi, Anything... We Want to Meet Collaborators!</h1>
+                <h1 class="contact-header-text-3-2">Reach out, Say Hi, Anything... We Want to Meet Collaborators!</h1>
+                <p class="contact-text-1">Email Us At: productions@b-mhac.com</p>
+                <div class="contact-undercircle-3"></div>
+            </div>
+            <div class="contact-circle-3"><span class="contact-circle-3-after"></span></div>
+        </div>
+    </div>
+    <div class="contact-sub-block-2">
+        <div class="contact-form-container">
+            <form class="contact-form-1" asp-page="/Contact_Submit" method="post">
+                <label class="form-text" for="fname">Name:</label>
+                <br>
+                <input class="name-box" type="text" id="fname" name="name" placeholder="Your name...">
+                <br>
+                <label class="form-text" for="email">E-mail:</label>
+                <br>
+                <input class="email-box" type="text" id="email" name="mail" placeholder="Your email...">
+                <br>
+                <label class="form-text" for="sub">Subject:</label>
+                <br>
+                <input class="subject-box" type="text" id="sub" name="subject">
+                <br>
+                <label class="form-text" for="msg">Message:</label>
+                <br>
+                <textarea class="message-box" id="msg" name="message"></textarea>
+                <br><br>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+</div>

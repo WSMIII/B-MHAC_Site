@@ -1,0 +1,181 @@
+﻿@page
+@model B_MHAC_Site.Pages.WorksModel
+@{
+    ViewData["Title"] = "Works";
+}
+
+<div class="works-main-block" onclick="startPage()">
+    <h4 id="works-hover-text-1">Click anywhere to see what we can do!</h4>
+    <h4 id="works-hover-text-2">Click anywhere to see what we can do!</h4>
+    <div class="works-sub-block-1">
+        <div class="works-header-block-1">
+            <div class="works-header-block-1-before">
+                <h1 class="works-header-text-1">What We Can Help With...</h1>
+                <div class="works-undercircle-1"></div>
+            </div>
+            <div class="works-circle-1"><span class="works-circle-1-after"></span></div>
+            <div class="works-ver-bar-1"></div>
+            <div class="works-hor-bar-1"></div>
+        </div>
+    </div>
+    <div class="works-sub-block-2">
+        <div class="works-dev-block">
+            <div class="works-dev-block-before">
+                <div class="works-dev-block-sensor" onmouseover="developBlockOpen()" onmouseout="developBlockClose()" onclick="flipDevelopBlock()"></div>
+                <div class="works-dev-block-cover">
+                    <img src="https://bmhacmedia.blob.core.windows.net/graphics/Develop_Cover.png" alt="Develop_Icon" class="works-dev-icon" />
+                    <p class="works-dev-cover-text">
+                        We can help you from that initial spark of an idea all the way
+                        to how we're going to get other people to see that idea.
+                    </p>
+                </div>
+                <div class="works-dev-main-block">
+                    <h2 class="works-dev-title">Development</h2>
+                    <video class="works-dev-reel-full" onended="playDevelopBody()">
+                        <source src="https://bmhacmedia.blob.core.windows.net/videos/Develop_Grain_Full.mp4" type="video/mp4" />
+                    </video>
+                    <video class="works-dev-reel-body">
+                        <source src="https://bmhacmedia.blob.core.windows.net/videos/Develop_Grain_Body.mp4" type="video/mp4" />
+                    </video>
+                    <div class="works-dev-list-main-block">
+                        <div class="works-dev-list-sidebar-1"></div>
+                        <ul class="works-dev-list-1">
+                            <li>Formulating Ideas</li>
+                            <li>Storyboarding</li>
+                            <li>Production Planning</li>
+                            <li>Budgeting</li>
+                            <li>Screenwriting</li>
+                            <li>Location Scouting</li>
+                        </ul>
+                        <ul class="works-dev-list-1-1">
+                            <li>Formulating Ideas</li>
+                            <li>Storyboarding</li>
+                            <li>Production Planning</li>
+                            <li>Budgeting</li>
+                            <li>Screenwriting</li>
+                            <li>Location Scouting</li>
+                            <li>Casting</li>
+                            <li>Scheduling</li>
+                        </ul>
+                        <div class="works-dev-list-sidebar-2"></div>
+                        <ul class="works-dev-list-2">
+                            <li>Casting</li>
+                            <li>Scheduling</li>
+                            <li>Treatments</li>
+                            <li>Animation Sketches</li>
+                            <li>Press Releases</li>
+                            <li>Floor Plans</li>
+                        </ul>
+                        <ul class="works-dev-list-2-1">
+                            <li>Treatments</li>
+                            <li>Animation Sketches</li>
+                            <li>Press Releases</li>
+                            <li>Floor Plans</li>
+                            <li>Pitching</li>
+                            <li>Mood Boards</li>
+                            <li>Set Design</li>
+                            <li>Concept Art</li>
+                        </ul>
+                        <div class="works-dev-list-sidebar-3"></div>
+                        <ul class="works-dev-list-3">
+                            <li>Pitching</li>
+                            <li>Mood Boards</li>
+                            <li>Set Design</li>
+                            <li>Concept Art</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="works-circle-2"><span class="works-circle-2-after"></span></div>
+            <div class="works-hor-bar-2"></div>
+        </div>
+    </div>
+    <div class="works-sub-block-3">
+        <div class="works-prod-block">
+            <div class="works-prod-block-before">
+                <div class="works-prod-block-sensor" onmouseover="productionBlockOpen()" onmouseout="productionBlockClose()" onclick="flipProductionBlock()"></div>
+                <div class="works-prod-block-cover">
+                    <img src="https://bmhacmedia.blob.core.windows.net/graphics/Production_Cover.png" alt="Production_Icon" class="works-prod-icon" />
+                    <p class="works-prod-cover-text">
+                        Any idea of image you can see in your head, we can bring
+                        to life for others to enjoy no matter what project,
+                        event or occasion.
+                    </p>
+                </div>
+                <div class="works-prod-main-block">
+                    <h2 class="works-prod-title">Production</h2>
+                    <video class="works-prod-reel-full" onended="playProductionBody()">
+                        <source src="https://bmhacmedia.blob.core.windows.net/videos/Production_Grain_Full.mp4" type="video/mp4" />
+                    </video>
+                    <video class="works-prod-reel-body">
+                        <source src="https://bmhacmedia.blob.core.windows.net/videos/Production_Grain_Body.mp4" type="video/mp4" />
+                    </video>
+                    <div class="works-prod-list-main-block">
+                        <div class="works-prod-list-sidebar-1"></div>
+                        <ul class="works-prod-list-1">
+                            <li>Commercials</li>
+                            <li>Events</li>
+                            <li>Real Estate</li>
+                            <li>Portraiture & Family Photos</li>
+                            <li>Speciality Cameras (Drones, 360 Cams, Full Format, Action Cams, etc.)</li>
+                            <li>Lighting</li>
+                        </ul>
+                        <div class="works-prod-list-sidebar-2"></div>
+                        <ul class="works-prod-list-2">
+                            <li>Sound Recording</li>
+                            <li>Green Screen</li>
+                            <li>Rehearsal</li>
+                            <li>Interviews</li>
+                            <li>PSA's</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="works-circle-3"><span class="works-circle-3-after"></span></div>
+            <div class="works-hor-bar-3"></div>
+        </div>
+    </div>
+    <div class="works-sub-block-4">
+        <div class="works-post-block">
+            <div class="works-post-block-before">
+                <div class="works-post-block-sensor" onmouseover="postBlockOpen()" onmouseout="postBlockClose()" onclick="flipPostBlock()"></div>
+                <div class="works-post-block-cover">
+                    <img src="https://bmhacmedia.blob.core.windows.net/graphics/Post_Cover.png" alt="Post_Icon" class="works-post-icon" />
+                    <p class="works-post-cover-text">
+                        Synthesizing Image, Sound, Animations and anything else you
+                        need into one effective package.
+                    </p>
+                </div>
+                <div class="works-post-main-block">
+                    <h2 class="works-post-title">Post Production</h2>
+                    <video class="works-post-reel-full" onended="playPostBody()">
+                        <source src="https://bmhacmedia.blob.core.windows.net/videos/Post_Grain_Full.mp4" type="video/mp4" />
+                    </video>
+                    <video class="works-post-reel-body">
+                        <source src="https://bmhacmedia.blob.core.windows.net/videos/Post_Grain_Body.mp4" type="video/mp4" />
+                    </video>
+                    <div class="works-post-list-main-block">
+                        <div class="works-post-list-sidebar-1"></div>
+                        <ul class="works-post-list-1">
+                            <li>Footage Assembly</li>
+                            <li>Color Correction</li>
+                            <li>Color Grading</li>
+                            <li>Sound Cleanup</li>
+                            <li>Sound Design</li>
+                            <li>Music Composition</li>
+                        </ul>
+                        <div class="works-post-list-sidebar-2"></div>
+                        <ul class="works-post-list-2">
+                            <li>Voice Over</li>
+                            <li>Animation</li>
+                            <li>Motion Graphics</li>
+                            <li>Intro/Outro Sequences</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="works-circle-4"><span class="works-circle-4-after"></span></div>
+            <div class="works-hor-bar-4"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | B-MHAC</title>
+    <meta name="keywords" content="B-MHAC, Branding, Media, Production, Entertainment, New York, New Jersey" />
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/works.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/about.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/contact.css" />
+</head>
+<body id="site-body">
+    <header id="site-header">
+        <img src="https://bmhacmedia.blob.core.windows.net/graphics/Abe_Mobile_Menu.png" alt="Menu" class="header-menu-mobile" onclick="mobileMenu()" />
+        <img src="https://bmhacmedia.blob.core.windows.net/graphics/BMHAC_Web_Logo_Slant.png" alt="Logo" class="header-logo" />
+        <a class="home-link-1" asp-area="" asp-page="/Index">Home</a>
+        <a class="home-link-2" asp-area="" asp-page="/Index"></a>
+        <a class="works-link" asp-area="" asp-page="/Works">Works</a>
+        <a class="about-link" asp-area="" asp-page="/About">About</a>
+        <a class="contact-link" asp-area="" asp-page="/Contact">Lets Make It Happen!</a>
+        <div class="header-left-bar"></div>
+        <div class="header-right-bar"></div>
+    </header>
+    <div class="page-container">
+        <main role="main">
+            <div class="left-border"></div>
+            <div class="right-border"></div>
+            @RenderBody()
+        </main>
+    </div>
+    <footer>
+        <pre class="footer-text">&copy; 2020 - B-MHAC - New Jersey/New York - <a class="privacy-link" asp-area="" asp-page="/Privacy">Privacy</a></pre>
+    </footer>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/index.js" asp-append-version="true"></script>
+    <script src="~/js/works.js" asp-append-version="true"></script>
+    <script src="~/js/about.js" asp-append-version="true"></script>
+    <script src="~/js/contact.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

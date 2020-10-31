@@ -1,0 +1,18 @@
+﻿@page
+@model B_MHAC_Site.Pages.Contact_SubmitModel
+@{
+    ViewData["Title"] = "Contact Us";
+
+    var name = Request.Form["name"];
+    var email = Request.Form["mail"];
+    var subject = Request.Form["subject"];
+    var message = Request.Form["message"];
+
+    Contact_Form.Submit_Form(name, email, subject, message).Wait();
+}
+
+<div class="contact-main-block">
+    <div class="contacts-header-block-1">
+        <h4 class="success">Your email has been sent, we will get back to you as soon as possible.</h4>
+    </div>
+</div>
